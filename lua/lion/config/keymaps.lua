@@ -32,3 +32,11 @@ keymap("v", "J", ":m '>+1<CR>gv=gv", "Move selection down")
 keymap("n", "c", '"_c', "Change without yanking")
 keymap("n", "C", '"_C', "Change to end of line without yanking")
 keymap("v", "p", '"_dP', "Paste over selection without yanking")
+
+-- Telescope
+local builtin = require("telescope.builtin")
+
+keymap("n", "<leader>ff", builtin.find_files, "Telescope find files")
+keymap("n", "<leader>fg", builtin.live_grep, "Telescope live grep")
+keymap("n", "<leader>fb", builtin.buffers, "Telescope buffers")
+keymap("n", "<leader>fh", builtin.help_tags, "Telescope help tags")
