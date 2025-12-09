@@ -1,6 +1,9 @@
 vim.g.mapleader = " "      -- map leader to <SPACE> " "
 vim.g.maplocalleader = " " -- map local leader to <SPACE> " "
 
+vim.g.loaded_netrw = 1       -- disable netrw autoload
+vim.g.loaded_netrwPlugin = 1 -- disable netrw plugin
+
 vim.opt.swapfile = false  -- stop creation of swap file
 
 vim.opt.backup = false      -- no backup file
