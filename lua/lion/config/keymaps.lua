@@ -45,3 +45,14 @@ keymap("n", "<leader>fh", builtin.help_tags, "Telescope help tags")
 local tree = require("nvim-tree.api")
 
 keymap("n", "<leader>e", tree.tree.toggle, "Nvim-tree toggle")
+
+-- Lsp
+local lsp_buf = vim.lsp.buf
+
+keymap({ "n", "v" }, "<leader>ca", lsp_buf.code_action, "Display possible code actions")
+keymap("n", "<leader>ci", lsp_buf.implementation, "Goto code implementations")
+keymap("n", "<leader>rs", lsp_buf.rename, "Rename reference symbol")
+keymap("n", "<leader>rl", lsp_buf.references, "List all references for symbol")
+keymap("n", "<leader>td", lsp_buf.type_definition, "Jump to definition of symbol")
+keymap("n", "<leader>ds", lsp_buf.document_symbol, "List all symbols in location list")
+keymap("n", "K", lsp_buf.hover, "Hover definition")
