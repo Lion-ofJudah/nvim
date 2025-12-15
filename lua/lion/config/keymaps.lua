@@ -56,3 +56,10 @@ keymap("n", "<leader>rl", lsp_buf.references, "List all references for symbol")
 keymap("n", "<leader>td", lsp_buf.type_definition, "Jump to definition of symbol")
 keymap("n", "<leader>ds", lsp_buf.document_symbol, "List all symbols in location list")
 keymap("n", "K", lsp_buf.hover, "Hover definition")
+
+-- Bufferline
+local buf_line = require("bufferline")
+
+keymap("n", "<Tab>", ":BufferLineCycleNext<CR>", "Goto next buffer")
+keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", "Goto previous buffer")
+keymap("n", "<leader><Tab>", ":bd<CR>", "Close buffer")
