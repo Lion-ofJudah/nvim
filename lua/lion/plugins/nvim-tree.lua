@@ -49,8 +49,7 @@ return {
         git_clean = false,
         no_buffer = false,
         no_bookmark = false,
-        custom = { ".git" },
-        exclude = { ".gitignore" }
+        custom = { "^.git$" },
     },
   },
   config = function(_, opts)
