@@ -111,3 +111,5 @@ keymap("n", "<leader>tb", gitsigns.toggle_current_line_blame, "Toggle line blame
 keymap("n", "<leader>tw", gitsigns.toggle_word_diff, "Toggle word diff")
 
 keymap({ "o", "x" }, "ih", gitsigns.select_hunk, "Select hunk")
+
+keymap("n", "<leader>gg", ":Neogit kind=vsplit<CR>", "Neogit open window")
