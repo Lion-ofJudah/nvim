@@ -22,6 +22,7 @@ require("lazy").setup({
     { import = "lion.plugins" },
     { import = "lion.plugins.lsp" },
     { import = "lion.plugins.telescope" },
+    { import = "lion.plugins.git" }
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
