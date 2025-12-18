@@ -1,0 +1,18 @@
+return {
+	c = { "clang_format" },
+	cpp = { "clang_format" },
+	css = { "prettierd", "prettier" },
+	go = { "goimports", "gofmt" },
+	html = { "prettierd", "prettier" },
+	java = { "google_java_format" },
+	javascript = { "prettierd", "prettier" },
+	json = { "prettierd", "prettier" },
+	lua = { "stylua" },
+	markdown = { "prettierd", "prettier" },
+	python = { "isort", "black" },
+	rust = { "rustfmt" },
+	sql = { "sqlfluff" },
+	typescript = { "prettierd", "prettier" },
+	typescriptreact = { "prettierd", "prettier" },
+	yaml = { "prettierd", "prettier" },
+}
