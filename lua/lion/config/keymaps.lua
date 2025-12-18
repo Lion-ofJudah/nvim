@@ -1,5 +1,5 @@
 local keymap = function(mode, lhs, rhs, desc)
-  vim.keymap.set(mode, lhs, rhs, { noremap = true, silent = true, desc = desc })
+	vim.keymap.set(mode, lhs, rhs, { noremap = true, silent = true, desc = desc })
 end
 
 -- Window navigation
@@ -68,20 +68,20 @@ keymap("n", "<leader><Tab>", ":bd<CR>", "Close buffer")
 -- Git
 local gitsigns = require("gitsigns")
 
-keymap("n", "[c", function ()
-  if vim.wo.diff then
-    vim.cmd.normal({ "[c", bang = true })
-  else
-    gitsigns.nav_hunk("prev")
-  end
+keymap("n", "[c", function()
+	if vim.wo.diff then
+		vim.cmd.normal({ "[c", bang = true })
+	else
+		gitsigns.nav_hunk("prev")
+	end
 end, "Navigate previous hunk")
 
-keymap("n", "]c", function ()
-  if vim.wo.diff then
-    vim.cmd.normal({ "]c", bang = true })
-  else
-    gitsigns.nav_hunk("next")
-  end
+keymap("n", "]c", function()
+	if vim.wo.diff then
+		vim.cmd.normal({ "]c", bang = true })
+	else
+		gitsigns.nav_hunk("next")
+	end
 end, "Navigate next hunk")
 
 keymap("n", "<leader>hs", gitsigns.stage_hunk, "Stage hunk")
@@ -91,20 +91,20 @@ keymap("n", "<leader>hR", gitsigns.reset_buffer, "Reset buffer")
 keymap("n", "<leader>hp", gitsigns.preview_hunk, "Preview hunk")
 keymap("n", "<leader>hi", gitsigns.preview_hunk_inline, "Preview hunk inline")
 
-keymap("n", "<leader>hb", function ()
-  gitsigns.blame_line({ full = true })
+keymap("n", "<leader>hb", function()
+	gitsigns.blame_line({ full = true })
 end, "Line blame")
 
 keymap("n", "<leader>hd", gitsigns.diffthis, "Git diff")
 
-keymap("n", "<leader>hD", function ()
-  gitsigns.diffthis("~")
+keymap("n", "<leader>hD", function()
+	gitsigns.diffthis("~")
 end, "Git diff")
 
 keymap("n", "<leader>hq", gitsigns.setqflist, "Populate quickfix list")
 
-keymap("n", "<leader>hQ", function ()
-  gitsigns.setqflist("all")
+keymap("n", "<leader>hQ", function()
+	gitsigns.setqflist("all")
 end, "Populate quick fixlist with all modified files")
 
 keymap("n", "<leader>tb", gitsigns.toggle_current_line_blame, "Toggle line blame")
