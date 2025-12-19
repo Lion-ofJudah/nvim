@@ -113,3 +113,8 @@ keymap("n", "<leader>tw", gitsigns.toggle_word_diff, "Toggle word diff")
 keymap({ "o", "x" }, "ih", gitsigns.select_hunk, "Select hunk")
 
 keymap("n", "<leader>gg", ":Neogit kind=vsplit<CR>", "Neogit open window")
+
+-- Color picker
+local picker = require("oklch-color-picker")
+
+keymap("n", "<leader>v", picker.pick_under_cursor, "Color picker")
