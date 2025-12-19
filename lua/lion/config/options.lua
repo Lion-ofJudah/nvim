@@ -33,6 +33,11 @@ vim.opt.breakindent = true -- when line break happens, the line is indented the 
 vim.opt.number = true -- show line number
 vim.opt.relativenumber = true -- show relative line number with respect to cursor line
 
+vim.opt.foldcolumn = "1" -- show foldcolumn
+vim.opt.foldenable = true -- enable folds
+vim.opt.foldlevel = 99 -- depth where folds should be opened
+vim.opt.foldlevelstart = 99 -- foldlevel when a buffer is first created (golbal)
+
 vim.opt.splitbelow = true -- when horizontal screen split is created, the split is at the bootom
 vim.opt.splitright = true -- when vertical screen split is created, the split is at the right side
 
