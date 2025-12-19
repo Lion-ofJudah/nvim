@@ -21,8 +21,11 @@ return {
 			"mfussenegger/nvim-lint",
 			"williamboman/mason.nvim",
 		},
-		config = function()
-			require("mason-nvim-lint").setup()
+		opts = {
+			ignore_install = { "golangci_lint", "clippy" },
+		},
+		config = function(_, opts)
+			require("mason-nvim-lint").setup(opts)
 		end,
 	},
 }
