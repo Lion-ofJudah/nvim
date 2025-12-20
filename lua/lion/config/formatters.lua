@@ -4,7 +4,7 @@ return {
 	css = { "prettierd", "prettier" },
 	go = { "goimports", "gofmt" },
 	html = { "prettierd", "prettier" },
-	java = { "google_java_format" },
+	java = { "google-java-format" },
 	javascript = { "prettierd", "prettier" },
 	json = { "prettierd", "prettier" },
 	lua = { "stylua" },
@@ -14,5 +14,6 @@ return {
 	sql = { "sqlfluff" },
 	typescript = { "prettierd", "prettier" },
 	typescriptreact = { "prettierd", "prettier" },
+	xml = { "xmlformat" },
 	yaml = { "prettierd", "prettier" },
 }
