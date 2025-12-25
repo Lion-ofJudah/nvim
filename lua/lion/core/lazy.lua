@@ -16,6 +16,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
+local lazy_theme = require("lion.utils.lazy-theme").get_lazy_theme()
 require("lazy").setup({
 	spec = {
 		-- import your plugins
@@ -27,7 +28,7 @@ require("lazy").setup({
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
-	install = { colorscheme = { "github_dark", "wildcharm" } },
+	install = { colorscheme = { lazy_theme } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
 })
