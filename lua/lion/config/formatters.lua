@@ -14,6 +14,6 @@ return {
 	sql = { "sqlfluff" },
 	typescript = { "prettierd", "prettier" },
 	typescriptreact = { "prettierd", "prettier" },
-	xml = { "xmlformat" },
+	xml = { "xmllint" },
 	yaml = { "prettierd", "prettier" },
 }
