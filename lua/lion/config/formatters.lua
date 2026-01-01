@@ -2,6 +2,7 @@ return {
 	c = { "clang_format" },
 	cpp = { "clang_format" },
 	css = { "prettierd", "prettier" },
+	fxml = { "xmllint" },
 	go = { "goimports", "gofmt" },
 	html = { "prettierd", "prettier" },
 	java = { "google-java-format" },
