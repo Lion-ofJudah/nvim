@@ -9,3 +9,4 @@ require("lion.config.keymaps")
 -- configure highlight groups
 require("lion.config.highlights").setup()
 require("lion.config.autocmds")
+require("lion.config.usercmds")
