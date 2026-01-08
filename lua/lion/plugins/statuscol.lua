@@ -16,7 +16,7 @@ return {
 				-- diagnostic
 				{
 					sign = {
-						namespace = { "diagnostic/signs" },
+						namespace = { ".*" },
 						maxwidth = 1,
 						auto = false,
 					},
