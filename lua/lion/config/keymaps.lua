@@ -59,11 +59,9 @@ keymap("n", "<leader>ds", lsp_buf.document_symbol, "List all symbols in location
 keymap("n", "K", lsp_buf.hover, "Hover definition")
 
 -- Bufferline
-local buf_line = require("bufferline")
-
 keymap("n", "<Tab>", ":BufferLineCycleNext<CR>", "Goto next buffer")
 keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", "Goto previous buffer")
-keymap("n", "<leader><Tab>", ":bd<CR>", "Close buffer")
+keymap("n", "<leader><Tab>", ":Bdelete<CR>", "Close buffer")
 
 -- Git
 local gitsigns = require("gitsigns")
