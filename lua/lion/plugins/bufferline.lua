@@ -6,6 +6,7 @@ return {
 	},
 	opts = {
 		options = {
+			close_command = "Bdelete",
 			custom_filter = function(buf_number, buf_numbers)
 				local name = vim.api.nvim_buf_get_name(buf_number)
 
