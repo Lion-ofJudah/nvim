@@ -13,6 +13,7 @@ return {
 	python = { "isort", "black" },
 	rust = { "rustfmt" },
 	sql = { "sqlfluff" },
+	svelte = { "prettierd", "prettier" },
 	typescript = { "prettierd", "prettier" },
 	typescriptreact = { "prettierd", "prettier" },
 	xml = { "xmllint" },

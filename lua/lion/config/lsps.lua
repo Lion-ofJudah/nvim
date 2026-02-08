@@ -12,6 +12,7 @@ return {
 	"pyright", -- for python
 	"rust_analyzer", -- for rust
 	"sqls", -- for sql
+	"svelte", -- for svelte
 	"tailwindcss", -- for tailwind
 	"ts_ls", -- for javascript, typescript
 	"yamlls", -- for yaml
